@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.main-container{
+    max-width: 900px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+.main-container div{
+    padding: 40px;
+}
+
+.main-container div img{
+    width: 60px;
+    margin-bottom: 25px;
+}
+
+.main-container div h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 95%);
+}
+
+.main-container div p{
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin-bottom: 5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans-div{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs-div{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-div{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.main-container div button{
+    padding: 12px 35px;
+    border-radius: 35px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.sedans-div button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs-div button{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-div button{
+    color: hsl(179, 100%, 13%);
+}
+
+.main-container div button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+/*-------For small screens-------*/
+
+@media screen and (max-width: 900px){
+    body{
+        align-items: center;
+        justify-content: center;
+        height: unset;
+        padding: 30px;
+    }
+
+    .main-container{
+        width: 300px;
+        display: grid;
+        grid-template-columns: none;
+        height: unset;
+    }
+
+    .main-container div{
+        height: 350px;
+    }
+}
+
+
